@@ -1,0 +1,404 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+}
+
+/* ! FIRST PAGE STARTS HERE */
+#first_page {
+  height: 100vh;
+  width: 100vw;
+  background-image: url("https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExaWlldTJuMjl0YTJ2dzd2MnE4eXdjbDd6N2Z3NDlrb2E0M2piaXRlaSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3osBLA53AVzn746dXi/giphy.gif");
+  /* background-image: url("https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExODhuNG4wbjVoMWEyY2VudjgyMWN3bWlyNmpmbGtrcDQyOWtkbzViOSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/g9582DNuQppxC/giphy.gif"); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* border: 10px solid black; */
+}
+nav {
+  height: 20vh;
+  /* border: 2px solid red; */
+  display: flex;
+}
+#nav_one {
+  /* border: 2px solid blue; */
+  flex-basis: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+#logo{
+    height: 170px;
+    width: 240px;
+    /* border: 2px solid black; */
+  
+}
+#nav_two {
+    /* border: 2px solid blue; */
+    flex-basis: 60%;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    font-weight: 550;
+}
+
+#nav_three {
+    /* border: 2px solid blue; */
+    flex-basis: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    gap: 35px;
+  }
+  .fa-cart-shopping{
+    color: white;
+    font-size: 25px;
+}
+#cart_items{
+    background-color: white;
+    color: black;
+    height: 20px;
+    width: 20px;
+    font-size: 12px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    border-radius: 50%;
+    position: absolute;
+    top: 30px;
+    left: 102px;
+    font-weight: 550;
+}
+#price{
+    font-size: 18px;
+    color: white;
+    font-weight: 550;
+}
+
+/* ! SECOND PAGE STARTS HERE */
+#second_page{
+  height: 100vh;
+  width: 100vw;
+  /* border: 10px solid black; */
+}
+#article_one{
+  /* border: 2px solid red; */
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-top: 50px;
+}
+#menu{
+  font-family: "Dancing Script", cursive;
+  font-size: 70px;
+  color: #E4002B;
+  
+}
+#article_two{
+  /* border: 2px solid red; */
+  height: 85vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.card_container{
+  height: 400px;
+  width: 270px;
+  /* border: 2px solid black; */
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin: 5px;
+  padding: 0px 15px;
+}
+.food_img{
+  height: 50%;
+  scale: 0.8;
+  transition: all 0.2s 0s ease;
+}
+.food_img:hover{
+  scale: 1.08;
+}
+.food_title{
+  font-size: 20px;
+}
+.food_desc{
+  font-size: 16px;
+  font-family: "Dancing Script", cursive;
+  text-align: center;
+  
+}
+.price_items{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0px 10px;
+}
+.food_price{
+  font-weight: 550;
+  font-style: italic;
+}
+  .food_quantity{
+    font-size: 18px;
+    font-weight: 550;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fa-minus,.fa-plus{
+    border: 1px solid black;
+    font-size: 10px;
+    padding: 4px;
+    border-radius: 50%;
+    color: white;
+    background-color: black;
+    margin: 0px 10px;
+}
+
+/* !THIRD PAGE STARTS HERE */
+#menu_one,#menu_two{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 50px;
+}
+
+/* !FOURTH PAGE STARTS HERE */
+#fourth_page{
+  height: 100vh;
+  width: 100vw;
+  /* border: 10px solid black; */
+}
+#fourth_one{
+  /* border: 2px solid red; */
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+#fourth_one>h1{
+  font-family: "Dancing Script", cursive;
+  font-size: 70px;
+  color: #E4002B;
+  
+}
+
+#fourth_two{
+  /* border: 2px solid red; */
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0px 20px;
+}
+#fourth_two>h3{
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 28px;
+  letter-spacing: 2px;
+}
+#fourth_two>p{
+  text-align: center;
+  font-style: italic;
+  font-size: 15px;
+  color: rgb(104, 103, 103);
+}
+#fourth_three{
+  /* border: 2px solid red; */
+  height: 50vh;
+  display: flex;
+  padding: 30px;
+}
+#fourth_three_one{
+  /* border: 2px solid blue; */
+  flex-basis: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#fourth_three_one>img{
+  height: 100%;
+  width: 90%;
+  border-radius: 30px;
+}
+#fourth_three_two{
+  /* border: 2px solid blue; */
+  flex-basis: 60%;
+  padding-left: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+#fourth_three_two>h2{
+
+   font-weight: 700;
+   text-transform: uppercase;
+   font-size: 28px;
+   letter-spacing: 2px;
+}
+#fourth_three_two>p{
+  font-style: italic;
+  font-size: 15px;
+  color: rgb(67, 65, 65);
+}
+
+/* ! FIFTH PAGE STARTS HERE */
+#fifth_page{
+  /* border: 2px solid black; */
+  display: flex;
+  height: 75vh;
+}
+
+#fifth_page_one{
+  /* border: 2px solid red; */
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+}
+#fifth_page_one>h2{
+  /* border: 2px solid blue; */
+  flex-basis: 15%;
+  font-family: "Dancing Script", cursive;
+  font-size: 40px;
+  color: #E4002B;
+  width: 100%;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  padding-right: 100px;
+  
+}
+#fifth_page_one>form{
+  /* border: 2px solid blue; */
+  flex-basis: 85%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-evenly;
+  padding-right: 100px;
+    
+}
+#fifth_page_one>form>input{
+  width: 70%;
+  padding: 7px 10px;
+}
+[type="submit"]{
+   background-color: #E4002B;
+   color: white;
+   font-weight: 800;
+   border-radius: 10px;
+   border: none;
+}
+
+#fifth_page_two{
+  /* border: 2px solid red; */
+  flex-basis: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+iframe{
+  height: 270px;
+  width: 500px;
+  border-radius: 30px;
+}
+
+/* ! SIXTH PAGE STARTS HERE */
+#sixth_page{
+  height: 60vh;
+  /* border: 2px solid black; */
+}
+#sixth_page_one{
+  height: 85%;
+  /* border: 2px solid red; */
+  color: white;
+  background-color: rgb(1, 1, 40);
+  display: flex;
+}
+#sixth_page_one_one{
+  /* border: 2px solid yellow; */
+  flex-basis: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-direction: column;
+}
+#sixth_page_one_one>h2{
+  font-family: "Dancing Script", cursive;
+  font-size: 40px;
+}
+#sixth_page_one_one>p{
+  font-size: 15px;
+  font-weight: 400;
+  font-style: italic;
+}
+#sixth_page_one_two{
+  /* border: 2px solid yellow; */
+  flex-basis: 30%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#sixth_page_one_two>h2{
+  font-family: "Dancing Script", cursive;
+  font-size: 40px;
+  text-align: center;
+}
+#sixth_page_one_two>p{
+  font-size: 15px;
+  font-weight: 400;
+  font-style: italic;
+}
+#sixth_page_one_three{
+  /* border: 2px solid yellow; */
+  flex-basis: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+#sixth_page_one_three>h2{
+  font-family: "Dancing Script", cursive;
+  font-size: 40px;
+  text-align: center;
+}
+#sixth_page_one_three>p{
+  font-size: 15px;
+  font-weight: 400;
+  font-style: italic;
+}
+#sixth_page_two{
+  height: 15%;
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 700;
+  background-color: rgb(1, 1, 40);
+  font-family: "Dancing Script", cursive;
+}
+
